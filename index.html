@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Business Lab | Venture Studio — From Idea to Global Business</title>
+  <meta name="description" content="Digital Business Lab (DBL) is a Venture Studio that validates, builds and scales ideas into global businesses across Technology, Digital Marketing, and Finance & Investment.">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 15 L85 40 L70 40 L70 85 L30 85 L30 40 L15 40 Z' fill='%23E1FF3C'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo" aria-label="Digital Business Lab — Home">
+        <svg viewBox="0 0 240 90" class="navbar__logo-svg" role="img" aria-hidden="true">
+          <path d="M8 46 L52 14 L96 46 L74 46 L74 30 L52 44 L30 30 L30 46 Z" fill="var(--color-accent)"/>
+          <text x="108" y="58" font-family="Montserrat, sans-serif" font-weight="800" font-size="52" fill="var(--color-white)" letter-spacing="1">DBL</text>
+        </svg>
+      </a>
+
+      <nav class="navbar__nav" id="primary-nav" aria-label="Primary">
+        <ul class="navbar__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#focus-areas">Focus Areas</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#build-with-us">Contact</a></li>
+        </ul>
+        <a href="#build-with-us" class="btn btn--primary navbar__cta">Book a Call</a>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" class="hero__bg-svg">
+          <defs>
+            <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(225,255,60,0.06)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="1440" height="900" fill="url(#grid)"/>
+          <g stroke="var(--color-accent)" stroke-width="1.5" fill="none" opacity="0.35">
+            <path d="M100 750 L100 500 L300 500 L300 350 L520 350"/>
+            <circle cx="520" cy="350" r="5" fill="var(--color-accent)"/>
+            <path d="M1340 200 L1140 200 L1140 400 L980 400 L980 620"/>
+            <circle cx="980" cy="620" r="5" fill="var(--color-accent)"/>
+            <path d="M700 80 L700 220 L860 220"/>
+            <circle cx="860" cy="220" r="4" fill="var(--color-accent)"/>
+          </g>
+          <g stroke="var(--color-accent)" stroke-width="2" fill="none" opacity="0.5">
+            <polyline points="180,650 260,600 340,630 420,560 500,590" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="container hero__content reveal">
+        <p class="eyebrow">Venture Studio · Miami, FL</p>
+        <h1 class="hero__title">From idea to <span class="text-accent">global business</span>.</h1>
+        <p class="hero__subtitle">
+          Digital Business Lab partners with founders, entrepreneurs and early-stage companies to validate,
+          build and scale high-potential ideas into real, investable businesses — reducing risk before you
+          commit the resources to grow.
+        </p>
+        <div class="hero__actions">
+          <a href="#build-with-us" class="btn btn--primary">Book a Call</a>
+          <a href="#focus-areas" class="btn btn--outline">Explore Focus Areas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOCUS AREAS ============ -->
+    <section class="section" id="focus-areas">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">What We Do</p>
+        <h2 class="section__title reveal">Three focus areas. One global vision.</h2>
+        <p class="section__lead reveal">
+          As a Venture Studio, we operate across the disciplines that turn a concept into a scalable company —
+          combining technology, growth and financial strategy under one roof.
+        </p>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 6 L38 14 V30 L24 38 L10 30 V14 Z" stroke="var(--color-accent)" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 18 L30 22 V28 L24 32 L18 28 V22 Z" stroke="var(--color-accent)" stroke-width="2.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Technology</h3>
+            <p class="card__text">
+              AI, automation and custom software. We design digital platforms, integrations and infrastructure
+              that give your business a real, scalable digital presence from day one.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="var(--color-accent)" stroke-width="2.5"/><path d="M24 14 L24 24 L31 28" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Digital Marketing</h3>
+            <p class="card__text">
+              Brand building, audience growth and content monetization across YouTube, TikTok, Instagram and
+              Facebook — plus e-books, online courses and digital communities that generate recurring revenue.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M8 38 L18 24 L26 30 L40 10" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 10 H40 V20" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Finance &amp; Investment</h3>
+            <p class="card__text">
+              Digital financial guidance tools for people and companies — diagnosis, budgeting, healthy financial
+              habits, debt management, credit profile building and investment alternatives.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK / DIFFERENTIATOR ============ -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="split">
+          <div class="split__col reveal">
+            <p class="eyebrow">Our Model</p>
+            <h2 class="section__title section__title--left">We build businesses, not just websites.</h2>
+            <p class="split__text">
+              We close the gap between having an idea and turning it into a viable business, reducing
+              uncertainty and risk before you invest significant resources. Our differentiator: we operate
+              as a Venture Studio — we validate, build and scale businesses with global reach, and for the
+              projects with the highest potential, we can join as strategic partners.
+            </p>
+            <ul class="checklist">
+              <li>Ideal for entrepreneurs with an idea but no validated business model yet</li>
+              <li>Early-stage startups that need strategy, development and market access</li>
+              <li>Professionals with sector expertise who want to turn it into a company</li>
+              <li>Companies creating new business units or digital products</li>
+              <li>Founders open to a strategic alliance or equity partnership with DBL</li>
+            </ul>
+          </div>
+
+          <div class="split__col reveal">
+            <div class="steps">
+              <div class="step">
+                <span class="step__num">01</span>
+                <div>
+                  <h3 class="step__title">Validate</h3>
+                  <p class="step__text">We stress-test the idea, the market and the business model before a single resource is committed.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__num">02</span>
+                <div>
+                  <h3 class="step__title">Build</h3>
+                  <p class="step__text">We design and develop the product, brand and go-to-market engine required to launch with confidence.</p>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step__num">03</span>
+                <div>
+                  <h3 class="step__title">Scale</h3>
+                  <p class="step__text">We drive growth and global reach — as your strategic partner, and in select cases, as an equity partner.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT (anchor placeholder, styled) ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">About DBL</p>
+        <h2 class="section__title reveal">A Venture Studio built for global ambition.</h2>
+        <p class="section__lead reveal">
+          Digital Business Lab is based in Miami, FL, and works with founders around the world who are ready
+          to turn sector knowledge and bold ideas into scalable, investable companies.
+        </p>
+        <div class="coming-soon reveal">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="8" stroke="var(--color-accent)" stroke-width="2.5"/><path d="M16 24 L22 30 L34 18" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Full team &amp; company story — <strong>coming soon</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUILD WITH US ============ -->
+    <section class="section section--dark" id="build-with-us">
+      <div class="container">
+        <div class="build">
+          <div class="build__intro reveal">
+            <p class="eyebrow">Build With Us</p>
+            <h2 class="section__title section__title--left">Have an idea? Let's see if it's viable.</h2>
+            <p class="build__text">
+              Tell us about your idea or project and our team will evaluate its potential — market fit,
+              scalability and the best path to bring it to life. Fill out the form and one of our partners
+              will get back to you.
+            </p>
+          </div>
+
+          <form class="build__form reveal" id="buildForm" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="phone">Phone / WhatsApp <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="company">Company / Project name <span class="optional">(optional)</span></label>
+                <input type="text" id="company" name="company">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="idea">Tell us about your idea or project</label>
+              <textarea id="idea" name="idea" rows="6" required placeholder="What problem does it solve? Who is it for? What stage is it at?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send my idea</button>
+            <p class="form-note">We review every submission personally. Expect a reply within 2 business days.</p>
+          </form>
+        </div>
+
+        <div class="contact-info reveal">
+          <div class="contact-info__item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 17.4c-.3 1.6-2.6 3-4.3 3.1-1.1.1-2.5-.1-6-1.7-4.4-2-7.2-6.5-7.4-6.8-.2-.3-1.8-2.4-1.8-4.5s1.1-3.2 1.5-3.6c.4-.4.9-.5 1.2-.5h.9c.3 0 .6 0 .9.7.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.7-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.7 1.7 3.1 1.9.4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.2-.4.5-.3.8-.2.3.1 2.1 1 2.4 1.2.3.2.6.3.6.5.1.2.1 1-.1 1.6z" fill="var(--color-accent)"/></svg>
+            <div>
+              <span class="contact-info__label">WhatsApp</span>
+              <a href="https://wa.me/17869400991" target="_blank" rel="noopener">+1 786-940-0991</a>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z" stroke="var(--color-accent)" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" stroke="var(--color-accent)" stroke-width="2"/></svg>
+            <div>
+              <span class="contact-info__label">Office</span>
+              <span>990 Biscayne Blvd, Ste 501-16, Miami, FL, United States</span>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="var(--color-accent)" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="var(--color-accent)" stroke-width="2"/></svg>
+            <div>
+              <span class="contact-info__label">Social</span>
+              <span class="social-soon">Coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ / LEGAL PLACEHOLDER PAGES ============ -->
+    <section class="section" id="faq">
+      <div class="container coming-soon-block reveal">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="18" stroke="var(--color-accent)" stroke-width="2.5"/><path d="M19 18a5 5 0 1 1 7 4.5c-1.2.7-2 1.5-2 3" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="32" r="1.6" fill="var(--color-accent)"/></svg>
+        <h2>FAQ — Frequently Asked Questions</h2>
+        <p>Coming soon</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="privacy-policy">
+      <div class="container coming-soon-block reveal">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 6 L38 14 V26 C38 34 32 40 24 42 C16 40 10 34 10 26 V14 Z" stroke="var(--color-accent)" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <h2>Privacy Policy</h2>
+        <p>Coming soon</p>
+      </div>
+    </section>
+
+    <section class="section" id="terms-and-conditions">
+      <div class="container coming-soon-block reveal">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3" stroke="var(--color-accent)" stroke-width="2.5"/><path d="M16 16h16M16 24h16M16 32h10" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <h2>Terms &amp; Conditions</h2>
+        <p>Coming soon</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="cookies-policy">
+      <div class="container coming-soon-block reveal">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="17" stroke="var(--color-accent)" stroke-width="2.5"/><circle cx="18" cy="18" r="2" fill="var(--color-accent)"/><circle cx="28" cy="16" r="2" fill="var(--color-accent)"/><circle cx="31" cy="27" r="2" fill="var(--color-accent)"/><circle cx="19" cy="30" r="2" fill="var(--color-accent)"/></svg>
+        <h2>Cookies Policy</h2>
+        <p>Coming soon</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg viewBox="0 0 240 90" class="footer__logo-svg" role="img" aria-label="Digital Business Lab">
+          <path d="M8 46 L52 14 L96 46 L74 46 L74 30 L52 44 L30 30 L30 46 Z" fill="var(--color-accent)"/>
+          <text x="108" y="58" font-family="Montserrat, sans-serif" font-weight="800" font-size="52" fill="var(--color-white)" letter-spacing="1">DBL</text>
+        </svg>
+        <p class="footer__tagline">Digital Business Lab — Venture Studio.<br>From idea to global business.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#focus-areas">Focus Areas</a></li>
+          <li><a href="#services">Services / Solutions</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#build-with-us">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="#cookies-policy">Cookies Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li>990 Biscayne Blvd, Ste 501-16<br>Miami, FL, United States</li>
+          <li><a href="https://wa.me/17869400991" target="_blank" rel="noopener">+1 786-940-0991</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> Digital Business Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING WHATSAPP ============ -->
+  <a href="https://wa.me/17869400991" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path d="M27 15.9c0 6.6-5.4 12-12 12-2.1 0-4.1-.5-5.8-1.5L3 28l1.7-6c-1.1-1.9-1.7-4-1.7-6.2 0-6.6 5.4-12 12-12s12 5.4 12 12z" fill="#000"/>
+      <path d="M21.5 18.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z" fill="var(--color-accent)"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
