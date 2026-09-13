@@ -72,15 +72,25 @@
     revealEls.forEach(function (el) { observer.observe(el); });
   }
 
-  /* ---------- Build With Us form (Fase 1: no backend yet) ---------- */
+  /* ---------- Build With Us form (backend pending — see setup comment in HTML) ---------- */
   var buildForm = document.getElementById('buildForm');
   if (buildForm) {
     buildForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      // Honeypot: real users never fill this hidden field; bots that
+      // auto-fill every input do. Silently drop the submission.
+      var honeypot = buildForm.querySelector('input[name="website"]');
+      if (honeypot && honeypot.value.trim() !== '') {
+        buildForm.reset();
+        return;
+      }
+
       var submitBtn = buildForm.querySelector('button[type="submit"]');
       var originalText = submitBtn ? submitBtn.textContent : '';
+      var successText = buildForm.getAttribute('data-success-text') || originalText;
       if (submitBtn) {
-        submitBtn.textContent = 'Thank you — we’ll be in touch soon';
+        submitBtn.textContent = successText;
         submitBtn.disabled = true;
       }
       setTimeout(function () {
@@ -90,6 +100,60 @@
           submitBtn.disabled = false;
         }
       }, 3200);
+    });
+  }
+
+  /* ---------- Cookie consent banner ---------- */
+  var cookieBanner = document.getElementById('cookieBanner');
+  var cookieAccept = document.getElementById('cookieAccept');
+  var COOKIE_CONSENT_KEY = 'dbl_cookie_consent';
+
+  if (cookieBanner) {
+    var hasConsent = false;
+    try {
+      hasConsent = localStorage.getItem(COOKIE_CONSENT_KEY) === 'accepted';
+    } catch (err) {
+      hasConsent = false;
+    }
+    if (!hasConsent) {
+      cookieBanner.hidden = false;
+    }
+    if (cookieAccept) {
+      cookieAccept.addEventListener('click', function () {
+        try {
+          localStorage.setItem(COOKIE_CONSENT_KEY, 'accepted');
+        } catch (err) {
+          /* localStorage unavailable (private mode, etc.) — banner will just show again next visit */
+        }
+        cookieBanner.hidden = true;
+      });
+    }
+  }
+
+  /* ---------- Chat placeholder (no live-chat account connected yet) ---------- */
+  var chatToggle = document.getElementById('chatToggle');
+  var chatPopover = document.getElementById('chatPopover');
+
+  if (chatToggle && chatPopover) {
+    chatToggle.addEventListener('click', function () {
+      var isHidden = chatPopover.hidden;
+      chatPopover.hidden = !isHidden;
+      chatToggle.setAttribute('aria-expanded', String(isHidden));
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!chatPopover.hidden && !chatPopover.contains(e.target) && e.target !== chatToggle && !chatToggle.contains(e.target)) {
+        chatPopover.hidden = true;
+        chatToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !chatPopover.hidden) {
+        chatPopover.hidden = true;
+        chatToggle.setAttribute('aria-expanded', 'false');
+        chatToggle.focus();
+      }
     });
   }
 })();
