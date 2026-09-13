@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# TODO once the final domain is registered: add a Sitemap line here
+# (e.g. "Sitemap: https://your-domain.com/sitemap.xml") and generate
+# sitemap.xml — both require the real production URL to be meaningful.
