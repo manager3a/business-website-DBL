@@ -1,4 +1,72 @@
 /* =========================================================
+   DIGITAL BUSINESS LAB — Brand fonts (self-hosted, see
+   Assets/Branding/TIPOGRAFIA in the repo for the source files)
+   ========================================================= */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/Lato-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/Lato-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/Lato-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/lato/Lato-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================================
    DIGITAL BUSINESS LAB — Design Tokens
    ========================================================= */
 :root {
@@ -201,7 +269,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .navbar__logo-svg { height: 68px; width: auto; }
 
 /* DBL original imagotipo colors (from brand SVG) */
-.cls-1 { fill: #D6FF00; }
+.cls-1 { fill: var(--color-accent); }
 .cls-2 { fill: var(--color-white); }
 
 .navbar__nav {
@@ -327,6 +395,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .section--alt { background: var(--color-bg-alt); }
 .section--dark { background: var(--color-surface); }
+
+/* Build With Us sits directly above FAQ with no visual break between them
+   (same dark tone family), so the usual double section padding reads as an
+   empty gap — tighten just this boundary. */
+#build-with-us { padding-bottom: var(--space-xl); }
+#faq { padding-top: var(--space-xl); }
 
 .section__title {
   font-size: clamp(1.75rem, 3.4vw, 2.6rem);
