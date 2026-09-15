@@ -399,7 +399,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* Build With Us sits directly above FAQ with no visual break between them
    (same dark tone family), so the usual double section padding reads as an
    empty gap — tighten just this boundary. */
-#build-with-us { padding-bottom: var(--space-xl); }
+#build-with-us { padding-bottom: 0; }
 #faq { padding-top: var(--space-xl); }
 
 .section__title {
@@ -692,6 +692,37 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 .legal__body a { color: var(--color-accent); text-decoration: underline; }
 
+.legal__body strong { color: var(--color-white); }
+
+.legal__body ul {
+  color: var(--color-text-muted);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  margin: 0 0 0.75rem 1.25rem;
+  padding: 0;
+}
+.legal__body li { margin-bottom: 0.35rem; }
+
+.legal__body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.legal__body th,
+.legal__body td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+.legal__body th {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
 .legal__disclaimer {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);
@@ -800,8 +831,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   padding-bottom: var(--space-xl);
 }
 
-.footer__logo-svg { height: 44px; width: auto; margin-bottom: var(--space-sm); }
-.footer__tagline { color: var(--color-text-faint); font-size: 0.9rem; line-height: 1.7; }
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.footer__logo-svg { height: 40px; width: auto; flex-shrink: 0; }
+.footer__tagline { color: var(--color-text-faint); font-size: 0.9rem; line-height: 1.4; }
 
 .footer__col h4 {
   font-size: 0.85rem;
